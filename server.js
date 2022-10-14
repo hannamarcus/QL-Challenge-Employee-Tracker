@@ -1,4 +1,4 @@
-const mysql = require('mysql2/promise');
+const mysql = require('mysql2');
 const inquirer = require("inquirer");
 require("console.table");
 
@@ -19,7 +19,7 @@ function mainMenu() {
         {
             type: 'list',
             name: 'userChoice',
-            message: 'What would you like to do? (use arrow keys)',
+            message: 'What would you like to do?',
             choices: [
                 'View all Departments',
                 'View all Roles',
